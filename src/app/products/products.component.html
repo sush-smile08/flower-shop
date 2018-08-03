@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <div><h4>Cart:{{quantity}}</h4></div>
+      <table class="table table-bordered">       
+        <tr>
+            <th>{{quantity}}</th>
+            <th>₹{{total}}</th>
+            <th>{{totalqty}}</th>
+        </tr>
+        <tr *ngFor="let item of cart " >
+            <td>{{item.name}}</td>
+            <td>₹{{item.price}}</td>
+            <td [attr.id]="'qty'+ item.name"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-9">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Flowers Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of productList ">
+            <th>{{p.id}}</th>
+            <th>{{p.name}}</th>
+            <th>₹{{p.price}}</th>
+            <th>
+              <button class="btn btn-primary cart" (click)="addToCart(p)">Add to Cart</button>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Angular 2 Tutorial 13: Simple Shopping Application - Part 1 -->

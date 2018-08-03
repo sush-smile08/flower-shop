@@ -1,0 +1,15 @@
+/* .navbar{
+    background: #000;
+    margin-bottom: 100px;
+}
+.navbar a.navbar-brand, {
+    color: #fff;
+} */
+.navbar-dark .navbar-brand{
+    color: #fff;
+}
+.bg-dark {
+    background: url(http://gipsypixel.com/wp-content/uploads/2017/11/Black-Wallpaper-With-Flowers-Cool-Hd-Photos-Dark-Flower-For-Smartphone-Images.jpg);
+    background-color: #343a40 !important;
+    background-position: center 100%;
+}

@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body{ 
+    padding: 80px ;
+    background: url('http://longwallpapers.com/Desktop-Wallpaper/purple-flower-wallpaper-free-For-Desktop-Wallpaper.jpg');
+    background-position: center 100%;
+    /* http://eskipaper.com/images/neon-flowers-3.jpg */
+}
